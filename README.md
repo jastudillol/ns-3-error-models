@@ -18,24 +18,40 @@ The use of the models is simple, just place the model files in the "nsXX/src/wif
 To avoid errors in the compilation of the new error models it is necessary to add the name of the source files ".cc" and headers ".h" in the "wscript" file as follows:
 
 'model/error-rate-model2.cc'
+
 'model/error-rate-model3.cc'
+
 'model/error-rate-model4.cc'
+
 'model/error-rate-model5.cc'
+
 'model/error-rate-model6.cc'
+
 'model/error-rate-model7.cc'
+
 'model/error-rate-model8.cc'
+
 'model/error-rate-model9.cc'
+
 'model/error-rate-model2.h'
+
 'model/error-rate-model3.h'
+
 'model/error-rate-model4.h'
+
 'model/error-rate-model5.h'
+
 'model/error-rate-model6.h'
+
 'model/error-rate-model7.h'
+
 'model/error-rate-model8.h'
+
 'model/error-rate-model9.h'
 
 Finally, the selection of the new error model in the simulation file is done in a simple way, as shown below:
 
-errorModelType = "ns3::ErrorRateModel2"
-wifi.SetErrorRateModel (errorModelType)
+errorModelType = "ns3::ErrorRateModel2";
+
+wifi.SetErrorRateModel (errorModelType);
 
